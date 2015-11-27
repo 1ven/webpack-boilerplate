@@ -19,16 +19,14 @@ module.exports = {
         ]
     },
     resolve: {
-        modulesDirectories: ['node_modules'],
-        extensions: ['', '.js']
+        extensions: ['', '.react.js', '.js', '.jsx'],
+        modulesDirectories: ['source', 'node_modules']
     },
     resolveLoader: {
         modulesDirectories: ['node_modules'],
         moduleTemplates: ['*-loader', '*'],
         extensions: ['', '.js'],
     },
-    watch: true,
-    devtool: 'cheap-module-eval-source-map',
     devServer: {
         contentBase: __dirname + '/build'
     }

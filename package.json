@@ -4,8 +4,8 @@
   "description": "Webpack boilerplate",
   "main": "index.js",
   "scripts": {
-    "webpack": "webpack",
-    "webpack-dev": "webpack-dev-server --inline --hot"
+    "webpack-dev": "NODE_ENV=development webpack-dev-server --devtool cheap-module-eval-source-map --progress --hot --inline",
+    "webpack-production": "NODE_ENV=production webpack -p"
   },
   "author": "Aiven Reach",
   "license": "ISC",
